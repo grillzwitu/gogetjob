@@ -1,0 +1,11 @@
+
+# Ignore the pycache folder
+**/__pycache__/
+
+#Ignore tests db
+
+job_func/test.db
+
+
+
+

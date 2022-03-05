@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+        {% block content %}
+            <h1>Job Search Results</h1>
+             
+            {% for job in job_results %}
+                <div>
+                    {{ job.title }}
+                    {{ job.location }}
+                    {{ job.job_type }}
+                    {{ job.hiring_organisation }}
+                    {{ job.date_posted }}
+                </div>
+            {% endfor %}
+        {% endblock content %}

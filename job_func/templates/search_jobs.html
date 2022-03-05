@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+    {% block content %}
+        <div>
+            <form method = "POST" action = "http://localhost:5000/get_jobs">
+                {{ form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend>Find Me New Jobs</legend>
+                    <div class="form-group">
+                        {{ form.keyword.label(class="form-control-label" ) }}
+                        {{ form.keyword(class="form-control form-control-lg") }}
+                    </div>
+                </fieldset>
+                <div class="mt-3">
+                    {{ form.submit(class="btn btn-dark")}}
+                </div>
+            </form>
+        </div>
+    {% endblock content %}
