@@ -1,17 +1,16 @@
 {% extends "layout.html" %}
         {% block content %}
-            <h1>Job Search Results</h1>
+            <h1>Search Results</h1>
              
-            
                 <div class="container">
                     <div class="row">
                         {% for job in job_results %}
-                            <div class="col-3 shadow p-3 m-3  bg-body rounded"> 
-                                <span class="fs-4 " > {{ job.title }} </span><br>
-                                <span class="fw-light"> {{ job.location }}</span><br>    
-                                <span class="fw-light"> {{ job.job_type }} </span><br>
-                                <span class="fs-6 red-text">Hiring Organization: </span><span class="fw-light"> {{ job.hiring_organisation }}</span><br>   
-                                <span class="fs-6 red-text">Date Posted: </span><span class="fw-light"> {{ job.date_posted }}</span>   
+                            <div class="col-3 shadow p-2 m-3 rounded-3">
+                                <span class="fs-5 fw-bold" > <a href= "https://weworkremotely.com{{ job.link }}" class="job-title">  {{ job.title }}  </a> </span><br>
+                                <span class="fw-light text-primary"> {{ job.search_location }}</span><br>    
+                                <span class="fw-light text-primary"> {{ job.job_type }} </span><br>
+                                <span class="fs-6 fw-bold">Hiring Organization: </span><span class="text-danger"> {{ job.hiring_organisation }}</span><br>   
+                                <span class="fs-6 fw-bold">Date Posted: </span><span class="text-dark"> {{ job.date_posted }}</span>   
                             </div>
                         {% endfor %}
                     </div>

@@ -91,10 +91,20 @@ a.article-title:hover {
   color:#ffffff
 }
 
+.col-3 {
+  transition: 250ms;
+}
+
 .col-3:hover{
-  border: thin solid #000000;
+  border: 0.02em solid #00000046;
+  background-color: #0e04041f;
 }
 
 .red-text {
   color: rgb(59, 29, 29);
+}
+
+.job-title {
+  text-decoration: none;
+  color: inherit;
 }
