@@ -91,15 +91,10 @@ a.article-title:hover {
   color:#ffffff
 }
 
-<<<<<<< HEAD
-.col-4:hover{
-  border: thin solid aqua;
-=======
 .col-3:hover{
   border: thin solid #000000;
->>>>>>> df3e70fa8c52d613736948c5ce3f2ab8b0eddce4
 }
 
 .red-text {
-  color: rgb(255, 0, 64);
+  color: rgb(59, 29, 29);
 }
