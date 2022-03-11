@@ -90,3 +90,7 @@ a.article-title:hover {
 #wit-col{
   color:#ffffff
 }
+
+.col-4:hover{
+  border: thin solid #000000;
+}
